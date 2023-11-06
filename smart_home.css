@@ -836,7 +836,7 @@ gap: 1.5rem;
   .slider input{
     height: 100%;
     width: 100%;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     position: absolute;
     background: none;
     outline: none;
