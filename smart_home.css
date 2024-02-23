@@ -26,7 +26,7 @@ header {
     left: 0;
     right: 0;
     background: #fff;
-    padding: 2rem 9%;
+    padding: 1rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,7 +239,6 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    /* background-image: linear-gradient(107.52deg, hsl(14, 40%, 90%) 16.64%, #ede8e5); */
     background: url(./img/Large-modern-house-facade.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -333,11 +332,12 @@ header .fa-bars {
 }
 
 .properties .box-container .box {
-    flex: 1 1 30rem;
+    flex: auto;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
     position: relative;
+    text-align: center;
 
 }
 
@@ -382,6 +382,9 @@ header .fa-bars {
     text-decoration: none;
 }
 
+.button_properties {
+    align-items: center;
+}
 
 #main {
     min-height: 350px;
@@ -444,8 +447,6 @@ img#da1 {
     width: 200px;
     height: 225px;
     display: inline-block;
-    border-style: inset;
-    margin-left: 12.5%;
 }
 
 
@@ -463,7 +464,6 @@ button {
     font-size: 20px;
     font-family: revert;
     margin-right: auto;
-
 }
 
 #bot h2 {
@@ -583,7 +583,7 @@ button {
 
 .card {
     box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.15);
-    padding: 3.5em 1em;
+    padding: 3.5em 0.5;
     border-radius: 0.6em;
     color: #1f003b;
     cursor: pointer;
@@ -743,14 +743,6 @@ button {
     color: var(--orange);
 }
 
-
-
-
-
-
-
-
-
 @media (max-width:991px) {
     html {
         font-size: 55%;
@@ -764,8 +756,36 @@ button {
         padding: 2rem;
     }
 
-    .hone {
-        background-position: left;
+    .properties {}
+
+    .home {
+        background-position: right;
+
+
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem 0;
+        line-height: 1.5;
+        font-style: bold;
+        font-weight: 900;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+        color: #651471;
+    }
+
+
+    header .logo {
+        font-size: 3rem;
+        color: 3rem;
+        font-weight: bolder;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-between;
     }
 }
 
@@ -805,6 +825,20 @@ button {
     .hone .content span {
         font-size: 2.5rem;
     }
+
+    .home .content p {
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem 0;
+        line-height: 1.5;
+        font-style: bold;
+        font-weight: 900;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+        color: #651471;
+    }
 }
 
 
@@ -816,10 +850,21 @@ button {
     .heading {
         font-size: 3rem;
     }
+
+    .home .content p {
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem 0;
+        line-height: 1.5;
+        font-style: bold;
+        font-weight: 900;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+        color: #651471;
+    }
 }
-
-
-
 
 
 .wrapper {

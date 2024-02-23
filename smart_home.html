@@ -16,7 +16,7 @@
         <label for="toggler" class="fas fa-bars"></label>
         <a href="" class="logo">SMART<span> HOME</span></a>
 
-        <nav class=" nav-menu">
+        <nav class=" nav-menu navbar navbar-default">
             <ul id="main-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a>
@@ -95,22 +95,31 @@
 
             </div>
 
-            <div id="bot">
-                <h1>
-                    <center><img src=".//img/den1.png" id="led"></center>
-                    <button type="button" id="btn1">On</button>
-                    <button type="button" id="btn2">Off</button><br><br>
-                </h1>
-                <h1>
-                    <center><img src="./img/mobile-1976104_1280.png" id="call"></center>
-                    <button type="button" id="btn3">On</button>
-                    <button type="button" id="btn4">Off</button><br><br>
-                </h1>
-                <h1>
-                    <center><img src="./img/loa.png" id="loa"></center>
-                    <button type="button" id="btn5">On</button>
-                    <button type="button" id="btn6">Off</button><br><br>
-                </h1>
+            <div id="bot" class="box-container">
+                <div class="box">
+                    <h1>
+                        <img src=".//img/den1.png" id="led">
+                        <div>
+                            <button type="button" id="btn1">On</button>
+                            <button type="button" id="btn2">Off</button><br><br>
+                        </div>
+
+                    </h1>
+                </div>
+                <div class="box">
+                    <h1>
+                        <img src="./img/mobile-1976104_1280.png" id="call">
+                        <button type="button" id="btn3">On</button>
+                        <button type="button" id="btn4">Off</button><br><br>
+                    </h1>
+                </div>
+                <div class="box">
+                    <h1>
+                        <img src="./img/loa.png" id="loa">
+                        <button type="button" id="btn5">On</button>
+                        <button type="button" id="btn6">Off</button><br><br>
+                    </h1>
+                </div>
             </div>
 
         </div>
@@ -262,9 +271,12 @@
     <section class="member" id="member">
 
         <h1 class="heading"> Members<span>.</span></h1>
+        <div>
 
-        <div class="row">
-            <div class="column">
+        </div>
+        <div class="row box-container">
+
+            <div class="column box">
                 <div class="card">
                     <div class="img-contaier">
                         <img src="./img/yen1.jpg" alt="">
@@ -289,7 +301,7 @@
             </div>
 
 
-            <div class="column">
+            <div class="column box">
                 <div class="card">
                     <div class="img-contaier">
                         <img src="./img/hai1.jpg" alt="">
