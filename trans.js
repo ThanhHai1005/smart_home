@@ -3,80 +3,47 @@ let img1 = document.querySelector('#led');
 let btn2 = document.querySelector('#btn2');
 
 
-btn1.addEventListener('click', ()=>{
+btn1.addEventListener('click', () => {
     img1.src = './img/denon.gif'
-    firebase.database().ref("thietbi1").set({den1: 1})
+    firebase.database().ref("thietbi1").set({ den1: 1 })
 })
-btn2.addEventListener('click', ()=>{
+btn2.addEventListener('click', () => {
     img1.src = './img/den1.png';
-    firebase.database().ref("thietbi1").set({den1: 0})
+    firebase.database().ref("thietbi1").set({ den1: 0 })
 })
 
 
+let btn3 = document.querySelector('#btn3');
+let img2 = document.querySelector('#call');
+let btn4 = document.querySelector('#btn4');
+// functions nut bam
+btn3.addEventListener('click', () => {
+    img2.src = './img/phonerun.gif';
+    firebase.database().ref("thietbi2").set({ dienthoai: 1 })
+})
+
+btn4.addEventListener('click', () => {
+    img2.src = './img/mobile-1976104_1280.png';
+    firebase.database().ref("thietbi2").set({ dienthoai: 0 })
+})
 
 
+// khoi tao cac thong s
+let btn5 = document.querySelector('#btn5');
+let img3 = document.querySelector('#loa');
+let btn6 = document.querySelector('#btn6');
 
+// functions nut bam
+btn5.addEventListener('click', () => {
+    img3.src = './img/loaon.gif';
+    firebase.database().ref("thietbi3").set({ loa: 1 })
 
+})
+btn6.addEventListener('click', () => {
+    img3.src = './img/loa.png';
+    firebase.database().ref("thietbi3").set({ loa: 0 })
 
-
-
-
-
-// let btn3 = document.querySelector('#btn3');
-// let img2 = document.querySelector('#call');
-// let btn4 = document.querySelector('#btn4');
-// // functions nut bam
-// btn3.addEventListener('click', ()=>{
-//     img2.src = './img/phonerun.gif'; 
-//     firebase.database().ref("thietbi2").set({dienthoai:1})
-// })
-
-// btn4.addEventListener('click', ()=>{
-//     img2.src = './img/mobile-1976104_1280.png';
-//     firebase.database().ref("thietbi2").set({dienthoai:0})
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // khoi tao cac thong s
-// let btn5 = document.querySelector('#btn5');
-// let img3 = document.querySelector('#loa');
-// let btn6 = document.querySelector('#btn6');
-
-// // functions nut bam
-// btn5.addEventListener('click', ()=>{
-//      img3.src = './img/loaon.gif' ;
-//      firebase.database().ref("thietbi3").set({loa:1})
-
-// })
-// btn6.addEventListener('click', ()=>{
-//     img3.src = './img/loa.png';
-//     firebase.database().ref("thietbi3").set({loa: 0})
-
-// })
-
-
-
-
-
+})
 
 
 const firebaseConfig = {
@@ -88,7 +55,7 @@ const firebaseConfig = {
     messagingSenderId: "91524795957",
     appId: "1:91524795957:web:84f6d4e03352e20ba1eb7c",
     measurementId: "G-CN9Y8E0NCK"
-    };
+};
 firebase.initializeApp(firebaseConfig);
 
 firebase.database().ref("Nhiet do 1").on("value", function (snapshot) {
